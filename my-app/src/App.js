@@ -21,6 +21,8 @@ import Nosotros from './pages/Nosotros';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import Contacto from './pages/Contacto';
+import Pruebas from './pages/Pruebas';
+import Compras from './pages/Compras';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path='/Nosotros' element={<Nosotros />} />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Contacto' element={<Contacto />} />
+        <Route path='/Pruebas' element={<Pruebas />} />
+        <Route path='/Compras' element={<Compras />} />
       </Routes>
     </Router>
   );

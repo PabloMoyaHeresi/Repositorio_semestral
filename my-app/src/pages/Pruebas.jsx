@@ -1,5 +1,8 @@
 import React from 'react';
-import Navbar_productos from '../components/Navbar_productos';
+import Navbar1 from '../components/Navbar1';
+import Navbar_prueba from '../components/Navbar_prueba';
+import Final from '../components/Final';
+import Carousell from '../components/Carousell';
 import Catalogo3 from '../components/Catalogo3';
 import '../components/estilos.css';
 import "../components/css/bootstrap.min.css";
@@ -8,11 +11,11 @@ import Carrito from '../components/Carrito';
 import { CartProvider} from "react-use-cart";
 
 
-function Productos() {
+function Home() {
   return (
     <body>
         <div className='fondo'>
-          <Navbar_productos/>
+          <Navbar_prueba/>
           <CartProvider>
           <div className='container-fluid espacio3'>
           <Catalogo3/>
@@ -28,4 +31,4 @@ function Productos() {
   )
 }
 
-export default Productos;
+export default Home

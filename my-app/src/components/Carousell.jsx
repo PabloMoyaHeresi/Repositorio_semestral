@@ -1,16 +1,5 @@
 import React from 'react';
-import "./estilos.css";
-import "./css/bootstrap.css"
-import "./css/bootstrap.min.css"
-import "./css/bootstrap-grid.css"
-import "./css/bootstrap-grid.css"
-import "./css/bootstrap-grid.min.css"
-import "./css/bootstrap-reboot.css"
-import "./css/bootstrap-reboot.min.css"
-import image5 from '../images/foto1.jpeg';
-import image6 from '../images/foto2.jpeg';
-import image7 from '../images/foto3.jpeg';
-import Carousel from 'react-bootstrap/Carousel';
+import { Carousel } from 'bootstrap';
 
 function Carousell() {
   return (
@@ -18,7 +7,7 @@ function Carousell() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image5}
+          src="holder.js/800x400?text=First slide&bg=373940"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -29,7 +18,7 @@ function Carousell() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image6}
+          src="holder.js/800x400?text=Second slide&bg=282c34"
           alt="Second slide"
         />
 
@@ -41,7 +30,7 @@ function Carousell() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image7}
+          src="holder.js/800x400?text=Third slide&bg=20232a"
           alt="Third slide"
         />
 

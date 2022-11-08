@@ -5,7 +5,7 @@ import image4 from '../images/jarana-modified.png';
 import icono from '../images/carrito-de-compras.png';
 import { Nav, Navbar, Container, NavDropdown, Button} from 'react-bootstrap';
 
-function Navbar_contacto() {
+function Navbar_prueba() {
   return (
     <Navbar className='fondo1' expand="lg">
       <Container fluid>
@@ -25,10 +25,10 @@ function Navbar_contacto() {
             style={{ maxHeight: '200px' }}
             navbarScroll
           >
-            <Nav.Link href="/"><h5 className='d-inline-block letra'>Jarana</h5></Nav.Link>
+            <Nav.Link href="/"><h5 className='d-inline-block activo letra'>Jarana</h5></Nav.Link>
             <Nav.Link href="/Productos"><h6 className='d-inline-block letra'>Productos</h6></Nav.Link>
             <Nav.Link href="/Nosotros"><h6 className='d-inline-block letra'>Nosotros</h6></Nav.Link>
-            <Nav.Link href="/Contacto"><h6 className='d-inline-block activo letra'>Contacto</h6></Nav.Link>
+            <Nav.Link href="/Contacto"><h6 className='d-inline-block letra'>Contacto</h6></Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="/Compras"><img src={icono} className="icono" /></Navbar.Brand>
@@ -37,4 +37,4 @@ function Navbar_contacto() {
   )
 }
 
-export default Navbar_contacto
+export default Navbar_prueba

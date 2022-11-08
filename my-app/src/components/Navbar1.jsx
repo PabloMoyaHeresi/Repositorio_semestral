@@ -1,47 +1,40 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
 import "./estilos.css";
-import "./css/bootstrap.css"
-import "./css/bootstrap.min.css"
-import "./css/bootstrap-grid.css"
-import "./css/bootstrap-grid.css"
-import "./css/bootstrap-grid.min.css"
-import "./css/bootstrap-reboot.css"
-import "./css/bootstrap-reboot.min.css"
+import "./css/bootstrap.min.css";
 import image4 from '../images/jarana-modified.png';
+import icono from '../images/carrito-de-compras.png';
+import { Nav, Navbar, Container, NavDropdown, Button} from 'react-bootstrap';
 
-function Navbar1() {
+function Navbar_home() {
   return (
-      <nav className="navbar navbar-expand-sm fondo1">
-        <div className="container-fluid">
-          <a className="navbar-brand activo" href='/'>
-            <img src={image4} className='espacio2'/>
-            Jarana</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav"> 
-              <li className="nav-item">
-                <a className="nav-link colores" href='/Productos'>Productos</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link colores" href='/Nosotros'>Nosotros</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link colores" href='/Contacto'>Contacto</a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <Navbar className='fondo1' expand="lg">
+      <Container fluid>
+      <Navbar.Brand href="/">
+      <img
+              src={image4}
+              width="30"
+              height="30"
+              className="d-inline-block align-top espacio4"
+              alt="React Bootstrap logo"
+            />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '200px' }}
+            navbarScroll
+          >
+            <Nav.Link href="/"><h5 className='d-inline-block activo letra'>Jarana</h5></Nav.Link>
+            <Nav.Link href="/Productos"><h6 className='d-inline-block letra'>Productos</h6></Nav.Link>
+            <Nav.Link href="/Nosotros"><h6 className='d-inline-block letra'>Nosotros</h6></Nav.Link>
+            <Nav.Link href="/Contacto"><h6 className='d-inline-block letra'>Contacto</h6></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <Navbar.Brand href="/Compras"><img src={icono} className="icono" /></Navbar.Brand>
+      </Container>
+    </Navbar>
   )
 }
 
-export default Navbar1
+export default Navbar_home

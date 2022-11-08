@@ -13,6 +13,12 @@
     color: white;
 }
 
+.icono{
+    width: 30px;
+    height: auto;
+    text-align: end;
+}
+
 .colores{
     color: #767676;
 }
@@ -21,8 +27,21 @@
     color: #2f2f2f;
 }
 
+.activo2{
+    color: black;
+}
+
+.letra{
+    font-weight: 400;
+}
+
 .fondo2{
     background-color: #2A2929;
+}
+
+.fondo3{
+    background-color: #00445f;
+    min-height: 100px;
 }
 
 .posicion{
@@ -42,10 +61,20 @@
     float: left;
 }
 
+.ig2{
+    width: 40px;
+    height: auto;
+}
+
 .spotify{
     width: 20px;
     height: auto;
     float: left;
+}
+
+.spotify2{
+    width: 40px;
+    height: auto;
 }
 
 .espacio{
@@ -57,6 +86,29 @@
     width: 10vh;
 }
 
+.espacio3{
+    padding-top: 2%;
+}
+
+.espacio4{
+    padding-right: 5px;
+    width: 6vh;
+    height: auto;
+}
+
+.espacio5{
+    padding-bottom: 2%;
+}
+
+.espacio6{
+    min-height: 180px;
+}
+
+.espacio7{
+    padding-right: 52%;
+    padding-top: 4%;
+}
+
 .footer{
     margin-top: auto;
     position: absolute;
@@ -65,6 +117,10 @@
 
 .fotos{
     height: 80vh;
+}
+
+.fotos2{
+    min-height: 350px;
 }
 
 .catalogo{
@@ -90,3 +146,26 @@
     text-decoration: none;
 }
 
+@media(max-width: 1230px){
+    .espacio6{
+        min-height: 200px;
+    }
+}
+
+@media(max-width: 1050px){
+    .espacio6{
+        min-height: 230px;
+    }
+}
+
+@media(max-width: 870px){
+    .espacio6{
+        min-height: 250px;
+    }
+}
+
+@media(max-width: 765px){
+    .espacio6{
+        min-height: auto;
+    }
+}
