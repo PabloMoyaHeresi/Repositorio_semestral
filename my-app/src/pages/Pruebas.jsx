@@ -9,19 +9,16 @@ import "../components/css/bootstrap.min.css";
 import Footer from '../components/Footer';
 import Carrito from '../components/Carrito';
 import { CartProvider} from "react-use-cart";
+import {Alert} from "react-bootstrap";
+import API from '../components/API';
 
 
 function Home() {
   return (
     <body>
         <div className='fondo'>
-          <Navbar_prueba/>
-          <CartProvider>
-          <div className='container-fluid espacio3'>
-          <Catalogo3/>
-          <Carrito/>
-          </div>
-          </CartProvider>
+          <Navbar_prueba/>    
+          <API/>
         </div>
         <div className='fondo3 container-fluid'>
           <Footer/>

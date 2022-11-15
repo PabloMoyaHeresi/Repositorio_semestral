@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "react-use-cart";
+import Paypal from "./Paypal";
+import API from "./API";
 
 const Carrito = () => {
+
+    const [checkout, setCheckOut ] = useState(false);
+    
     const {
         isEmpty,
         totalUniqueItems,
@@ -17,7 +22,7 @@ const Carrito = () => {
         <section className="py-4 container">
             <div className="row justify-content-center">
                 <div className="col-12">
-                    <h5>Cart ({totalUniqueItems}) Total Items: ({totalItems})</h5>
+                    <h5>Cart ({totalUniqueItems}) Total Items: ({totalItems}) </h5>
                     <table className="table table-light table-hover m-0 table-responsive-sm">
                         {items.map((item, index)=>{
                             return (
@@ -26,8 +31,8 @@ const Carrito = () => {
                                     <img src={item.img} style={{height: "6rem"}} />
                                 </td>
                                 <td>{item.title}</td>
-                                <td>{item.price}</td>
-                                <td>Cantidad ({item.quantity})</td>
+                                <td>Precio: {item.price}</td>
+                                <td>Cantidad: {item.quantity}</td>
                                 <button className="btn btn-info m-2"
                                 onClick={() => updateItemQuantity(item.id, item.quantity -1)}
                                 >-</button>
@@ -47,9 +52,18 @@ const Carrito = () => {
                 </div>
                 <div className="col-auto">
                     <button className="btn btn-danger"
-                    onClick={() => emptyCart()}
+                    onClick={() => {
+                        emptyCart();
+                        setCheckOut(false);
+                    }}
                     >Vaciar El Carrito</button>
-                    <button className="btn btn-primary m-2">Pagar ahora</button>
+                    { checkout ? (
+                        <Paypal />
+                    ) : (
+                        <button onClick={() => {
+                            setCheckOut(true);
+                        }} className="btn btn-primary m-2">Pagar ahora</button>
+                    )}
                 </div>
             </div>
         </section>

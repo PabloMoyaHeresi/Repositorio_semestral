@@ -30,7 +30,7 @@ const Data = {
             id: 4,
             img: image4,
             title: "Mazo Janero Lanzao",
-            desc: "Este nuevo mazo trae 3 modalidades distintas, la modalidad hot, modalidad trilogía (dinámica para tomar con amigos) y la modalidad con pintas (para juegos como pirámide y mándala) ¿Lo mejor? Tiene un código qr con las instrucciones y es semi-impermeable. ¡Qué empiece la JARANA!",
+            desc: "Este nuevo mazo trae 3 modalidades distintas, la modalidad hot, modalidad trilogía (dinámica para tomar con amigos) y la modalidad con pintas (para juegos como pirámide y mándala). ¡Qué empiece la JARANA!",
             price: 40,
         }
     ]

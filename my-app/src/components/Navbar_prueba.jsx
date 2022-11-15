@@ -31,7 +31,6 @@ function Navbar_prueba() {
             <Nav.Link href="/Contacto"><h6 className='d-inline-block letra'>Contacto</h6></Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="/Compras"><img src={icono} className="icono" /></Navbar.Brand>
       </Container>
     </Navbar>
   )

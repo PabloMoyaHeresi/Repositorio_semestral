@@ -1,48 +1,49 @@
 import React from 'react';
-import { Carousel } from 'bootstrap';
+import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button"
+import '../components/estilos.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import image from '../images/c1.jpeg';
+import image2 from '../images/c2.jpeg';
+import image3 from '../images/foto3.jpeg';
 
 function Carousell() {
   return (
+    <div>
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="d-block w-100 carrusel"
+          src={image}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <div className='fondo5 rounded'>
+          <h1 className='activo2'>¿Pre?</h1>
+          <h1 className='activo2'>¡JARANA!</h1>
+        </div>
+        <div>
+          <Button className='espacio13' href='/Productos'>¡Conoce nuestros productos!</Button>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="d-block w-100 carrusel"
+          src={image2}
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <div className='fondo5 rounded'>
+          <h1 className='activo2'>Tu tienda de tableros favorita</h1>
+          <h1 className='activo2 espacio13'>Alto en alboroto y grado alcohólico</h1>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  )
+    </div>
+  );
 }
 
 export default Carousell

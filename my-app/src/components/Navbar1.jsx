@@ -27,11 +27,9 @@ function Navbar_home() {
           >
             <Nav.Link href="/"><h5 className='d-inline-block activo letra'>Jarana</h5></Nav.Link>
             <Nav.Link href="/Productos"><h6 className='d-inline-block letra'>Productos</h6></Nav.Link>
-            <Nav.Link href="/Nosotros"><h6 className='d-inline-block letra'>Nosotros</h6></Nav.Link>
             <Nav.Link href="/Contacto"><h6 className='d-inline-block letra'>Contacto</h6></Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="/Compras"><img src={icono} className="icono" /></Navbar.Brand>
       </Container>
     </Navbar>
   )

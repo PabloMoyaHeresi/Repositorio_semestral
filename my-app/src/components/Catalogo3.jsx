@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../components/estilos.css';
 import "../components/css/bootstrap.min.css";
 import Itemcard from './Itemcard';
 import Data from './Data';
 
 const Catalogo3 = () => {
-  return (
+
+    return (
     <div>
         <h1 className='text-center mt-3'>Productos</h1>
         <section className='py-4 container'>
